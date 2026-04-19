@@ -1,1 +1,2 @@
 # mindful_backend
+Die Idee ist es eine Mindfulness Webanwendung zu entwickeln, mit dem Fokus auf regelmäßig durchführbaren Atemübungen. Diese sollen zum Motivationsanspurn auch noch mit einem täglichen Streak ausgestattet werden, wodurch die vergangene Konsistenz und der Fortschritt aufgezeigt wird. Eventuell soll es auch die Möglichkeit geben zu journaln, hier werden Aktivitäten mit der jeweiligen Stimmung versehen.
