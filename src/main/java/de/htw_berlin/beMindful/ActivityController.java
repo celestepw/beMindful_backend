@@ -1,11 +1,13 @@
 package de.htw_berlin.beMindful;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 public class ActivityController {
 
     @GetMapping("/activities")
@@ -16,5 +18,5 @@ public class ActivityController {
                 new ActivityEntry("Meditation")
         );
     }
-
 }
+
