@@ -1,5 +1,6 @@
 package de.htw_berlin.beMindful;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +18,10 @@ public class ActivityEntry {
     private String mood;      // Stimmung beim Journaling
     private boolean done;
     private LocalDate date;    // Tag, an dem erledigt – fürs Streak
+    private String owner;     // Username des Erstellers
+
+    @Column(length = 2000)
+    private String note;       // freie Tagebuch-Notiz
 
     public ActivityEntry() {}
 
@@ -38,4 +43,10 @@ public class ActivityEntry {
 
     public LocalDate getDate() { return date; }
     public void setDate(LocalDate date) { this.date = date; }
+
+    public String getOwner() { return owner; }
+    public void setOwner(String owner) { this.owner = owner; }
+
+    public String getNote() { return note; }
+    public void setNote(String note) { this.note = note; }
 }
