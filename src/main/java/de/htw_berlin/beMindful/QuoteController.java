@@ -9,7 +9,16 @@ import org.springframework.web.client.RestTemplate;
 @CrossOrigin(origins = {"https://bemindful-frontend.onrender.com", "http://localhost:5173"})
 public class QuoteController {
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    private final RestTemplate restTemplate;
+
+    public QuoteController() {
+        this(new RestTemplate());
+    }
+
+    // Für Tests: erlaubt das Einschleusen eines RestTemplate (z. B. mit MockRestServiceServer).
+    QuoteController(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
     @GetMapping("/quote")
     public Object getQuote() {
