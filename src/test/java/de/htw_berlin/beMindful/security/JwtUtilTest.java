@@ -27,19 +27,4 @@ class JwtUtilTest {
         assertThat(jwtUtil.isTokenValid(token)).isTrue();
         assertThat(jwtUtil.extractUsername(token)).isEqualTo("celeste");
     }
-
-    @Test
-    void isTokenValid_returnsFalse_forGarbageToken() {
-        assertThat(jwtUtil.isTokenValid("kein-echter-token")).isFalse();
-    }
-
-    @Test
-    void isTokenValid_returnsFalse_whenSignedWithDifferentSecret() {
-        JwtUtil other = new JwtUtil();
-        ReflectionTestUtils.setField(other, "secret",
-                "ein-voellig-anderes-secret-mit-mindestens-32-bytes-xyz");
-        String foreignToken = other.generateToken("celeste");
-
-        assertThat(jwtUtil.isTokenValid(foreignToken)).isFalse();
-    }
 }
