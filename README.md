@@ -1,4 +1,4 @@
 # beMindful_backend
 Die Idee ist es eine Mindfulness Webanwendung zu entwickeln, mit dem Fokus auf regelmäßig durchführbaren Atemübungen. Diese sollen zum Motivationsanspurn auch noch mit einem täglichen Streak ausgestattet werden, wodurch die vergangene Konsistenz und der Fortschritt aufgezeigt wird. Eventuell soll es auch die Möglichkeit geben zu journaln, hier werden Aktivitäten mit der jeweiligen Stimmung versehen.
 
-https://bemindful-frontend.onrender.com , hier der Link zur umgesetzten/fertiggestellten Website. Das initiale Laden dauert etwas, weil die kostenlose Datenbank im Hintergrund aufwachen muss.
+https://bemindful-frontend.onrender.com , hier der Link zur umgesetzten/fertiggestellten Website. Das initiale Laden bei der Registrierung, als auch beim ersten Login kann ca. 3 Minuten dauern, weil die kostenlose Datenbank im Hintergrund aufwachen muss.
